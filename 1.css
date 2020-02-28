@@ -1,0 +1,159 @@
+*{padding: 0; margin: 0}
+
+body {
+	font-family: Roboto,sans-serif;
+}
+
+header .z-top-bar {
+    height: 124px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    justify-content: center;
+}
+
+div#z-top-bar {
+    justify-content: space-between;
+    max-width: 1026px;
+}
+
+.z-logo {
+	background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg");
+	background-repeat: no-repeat;
+	display: block;
+	width: 100px;
+	height: 32px;
+	background-size: cover;
+	font-size: 0;
+	z-index: 2;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
+form.form-inline.input-group.search.flex-nowrap {
+    width: 50%;
+}
+
+input.form-control {
+    border-left: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.input-group-text {
+    background: white;
+    border-right: none;
+    cursor: pointer;
+}
+
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+img.rounded-circle {
+    width: 35px;
+}
+
+.extension {
+    margin-left: 45px;
+    box-sizing: border-box;
+}
+
+a {
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #32323d;
+}
+
+a:hover {
+	color: #6e55b4;
+	text-decoration: none;
+}
+
+.z-menu-dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+ul.nav.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav.navbar.menu-dropdown {
+    width: 1026px;
+    padding: 0;
+}
+
+li.nav-item {
+    display: inline-block;
+    padding: 10px 0px;
+    margin-right: 25px;
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+}
+
+li.nav-item a {
+	  text-transform: uppercase;
+}
+li.nav-item:hover .drop-down {
+	opacity: 1;
+	visibility: visible;
+	border-top: 3px solid #6e55b4;
+}
+
+.drop-down.padd-bott-10.padd-top-10 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+	  top: 100%;
+    background-color: #fcfcfc;
+    max-width: 600px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2);
+}
+
+.drop-down .title-group {
+	font-weight: 700;
+	font-size: 14px;
+	padding: 15px 0px;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+li.item {
+    list-style: none;
+}
+
+.tbl-col {
+    width: 150px;
+    padding: 0px 15px;
+    float: left;
+}
+
+ul.list-group {
+	padding: 5px 0px;
+}
+
+.padd-bott-10 {
+	padding-bottom: 10px!important;
+} 
+.padd-top-10 {
+	padding-top: 10px!important;
+}
+
+ul.list-group li.item {
+	padding: 5px 0px
+}
+
+ul.list-group li.item:hover {
+	color: #6e55b4;
+	background-color: #efefef;
+}
