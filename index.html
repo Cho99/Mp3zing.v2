@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Mp3zing</title>
 	<script src="https://kit.fontawesome.com/490dc00a45.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="1.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
 	<header style="display: block;">
@@ -21,7 +24,7 @@
 									<i class="fas fa-search"></i>
 								</div>
 							</div>
-							<input class="form-control" type="text" placeholder="Nhập tên bài hát cần tìm..." aria-label="Search" aria-describedby="addon-wrapping">
+							<input class="form-search" type="text" placeholder="Nhập tên bài hát cần tìm..." aria-label="Search" aria-describedby="addon-wrapping">
 						</form>
 						<div class="user-profile-container">
 							<div class="wrap">
@@ -196,7 +199,47 @@
 				</div>
 			</div>
 		</div>
-	</header>
+  </header>
 	<!-- Hết header -->
+
+	<!-- Bắt đầu slide -->
+	<div class="slider-main">
+		<div class="" style="max-width: 1024px">
+			<div id="slide-z" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#slide-z" data-slide-to="0" class="active"></li>
+					<li data-target="#slide-z" data-slide-to="1"></li>
+					<li data-target="#slide-z" data-slide-to="2"></li>
+				</ul>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<img src="./images/co_na.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img src="./images/khac_viet.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img src="./images/Banh_My.jpg" alt="First slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#slide-z" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#slide-z" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Hết slide -->
+
+	<div class="billboard-z">
+			<div class="billboard">
+				<div class="logo"><img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.png" alt=""></div>
+				<span>Hãy đăng nhập để khám phá thêm nhiều bài hát dành riêng cho bạn</span>
+				<a href="" class="dang-nhap">ĐĂNG NHẬP</a>
+			</div>
+	</div>
 </body>
 </html>

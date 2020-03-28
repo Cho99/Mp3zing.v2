@@ -1,13 +1,30 @@
 *{padding: 0; margin: 0}
 
 body {
-	font-family: Roboto,sans-serif;
+    font-family: Roboto,sans-serif;
 }
 
-header .z-top-bar {
+/*header .z-top-bar {
     height: 124px;
+}*/
+
+input[type=text] {
+ outline: none;
 }
 
+.form-search {
+    width: 100%;
+   
+}
+
+input.form-search {
+    font-size: 1rem;
+    padding: 4px;
+    border: 1px solid #ced4da;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+ 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     justify-content: center;
 }
@@ -18,14 +35,14 @@ div#z-top-bar {
 }
 
 .z-logo {
-	background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg");
-	background-repeat: no-repeat;
-	display: block;
-	width: 100px;
-	height: 32px;
-	background-size: cover;
-	font-size: 0;
-	z-index: 2;
+    background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 32px;
+    background-size: cover;
+    font-size: 0;
+    z-index: 2;
 }
 
 .wrap {
@@ -65,15 +82,15 @@ img.rounded-circle {
 }
 
 a {
-	font-size: 14px;
-	font-weight: 700;
-	text-decoration: none;
-	color: #32323d;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #32323d;
 }
 
 a:hover {
-	color: #6e55b4;
-	text-decoration: none;
+    color: #6e55b4;
+    text-decoration: none;
 }
 
 .z-menu-dropdown {
@@ -85,6 +102,8 @@ ul.nav.navbar-nav {
     display: flex;
     flex-direction: row;
     height: 100%;
+    padding: 0.2rem;
+    z-index: 99;
 }
 
 nav.navbar.menu-dropdown {
@@ -102,30 +121,31 @@ li.nav-item {
 }
 
 li.nav-item a {
-	  text-transform: uppercase;
+      text-transform: uppercase;
 }
 li.nav-item:hover .drop-down {
-	opacity: 1;
-	visibility: visible;
-	border-top: 3px solid #6e55b4;
+    opacity: 1;
+    visibility: visible;
+    border-top: 3px solid #6e55b4;
 }
 
 .drop-down.padd-bott-10.padd-top-10 {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-	  top: 100%;
+    top: 100%;
     background-color: #fcfcfc;
-    max-width: 600px;
+    max-width: 800px;
+    /* width: 100%; */
     box-shadow: 0 1px 5px rgba(0,0,0,.2);
 }
 
 .drop-down .title-group {
-	font-weight: 700;
-	font-size: 14px;
-	padding: 15px 0px;
-	line-height: normal;
-	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 0px;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 li.item {
@@ -139,21 +159,76 @@ li.item {
 }
 
 ul.list-group {
-	padding: 5px 0px;
+    padding: 5px 0px;
 }
 
 .padd-bott-10 {
-	padding-bottom: 10px!important;
+    padding-bottom: 10px!important;
 } 
 .padd-top-10 {
-	padding-top: 10px!important;
+    padding-top: 10px!important;
 }
 
 ul.list-group li.item {
-	padding: 5px 0px
+    padding: 5px 0px
 }
 
 ul.list-group li.item:hover {
-	color: #6e55b4;
-	background-color: #efefef;
+    color: #6e55b4;
+    background-color: #efefef;
+}
+
+/*Bắt đầu slide*/
+.slider-main {
+    display: flex;
+    justify-content: center;
+}
+
+.billboard-z .billboard .dang-nhap {
+    border: 0;
+    padding: 0.4rem 0.9rem;
+    line-height: 24px;
+    border-radius: 0.5rem;
+    background-color: #fdd100;
+    color: #ffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.billboard-z {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 1rem;
+}
+
+.billboard {
+    background-image: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/banner-bg.svg");
+    height: 74px;
+    border-radius: 2px;
+    height: 70px; 
+    color: #ffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.billboard-z .billboard .dang-nhap:hover {
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #6e55b4;
+}
+
+.logo {
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+a.dang-nhap {
+    padding: 1rem;
+    margin: 1rem;
+    margin-right: 2rem;
 }

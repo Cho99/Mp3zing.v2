@@ -1,0 +1,23 @@
+Slide
+Note: use class for JS
+- div ---> ul,li
+        	-> css 	-> display: inline(all)
+		-> display: inline block have padding
+		-> text indent: -9999px
+		-> transition: 0.4s;
+		-> cursor: pointer
+		->active -> cùng thuộc tính hover	
+- button-nextslide ---> JS 	-> document.querySelectorAll('');
+				-> for()	-> add event click -> add class and remove class all
+
+- HTML slide	--->ul,;i	-> slide	
+
+ul-> relative -> li -> absolute
+		 li -> relative -> div -> absolute
+
+
+căn giữa: left: 50%
+	  transform: translateX(-50%);
+
+JS: + previousElementSibling
+    + nextElemntSibling	
